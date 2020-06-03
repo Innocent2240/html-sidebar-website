@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en " dir="ltr">
+    <head>
+        <meta charset= " utf-8 ">
+        <title>INNOCENT BOKANG MATLEBJANE</title>
+        <link rel="stylesheet " href="style.css">
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    </head>
+        <body background="pc.jpg">
+            
+            <div class="btn">
+                <span class="fas fa-bars">
+            </div>
+            <nav class="sidebar">
+                <div class="text">Menu</div>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li>
+                        <a href= "#"class="feat-btn">About
+                            <span class=" fas fa-caret-down first"></span>
+                        </a>
+                        <ul class="feat-show">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Mission &amp; Vision</a></li>
+                            <li><a href="#">Resourses</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#"class="thing-btn">Things To Do
+                            <span class=" fas fa-caret-down second"></span>
+                        </a>
+                        <ul class="thing-show">
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">UpDates</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#"class="tran-btn">Traning
+                            <span class=" fas fa-caret-down third"></span>
+                        </a>
+                        <ul class="tran-show">
+                            <li>
+                                <a href="#"class="dev-btn">Development
+                                    <span class=" fas fa-caret-down fourth"></span>
+                                </a>
+                                <ul class="dev-btn">
+                                    <li><a href="#">SQL</a></li>
+                                    <li><a href="#">Html/Css</a></li>
+                                    <li><a href="#">C++</a></li>
+                                    <li><a href="#">Python/Java</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"class="pro-btn">Projects
+                                    <span class=" fas fa-caret-down fifth"></span>
+                                </a>
+                                <ul class="pro-btn">
+                                    <li><a href="#">Games</a></li>
+                                    <li><a href="#">Database</a></li>
+                                    <li><a href="#">Html/css/javascript</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </nav>
+
+
+<script>
+
+$('.btn').click(function(){
+
+    $(this).toggleClass("click");
+    $('.sidebar' ).toggleClass("show");
+});
+
+
+
+$('.feat-btn').click(function() {
+$('nav ul.feat-show' ).toggleClass("show");
+$('nav ul.feat-first' ).toggleClass("rotate");
+});
+
+$('.thing-btn').click(function() {
+$('nav ul.thing-show' ).toggleClass("show1");
+$('nav ul.thing-second' ).toggleClass("rotate");
+});
+
+$('.tran-btn').click(function() {
+$('nav ul.tran-show' ).toggleClass("show2");
+$('nav ul.tran-thrid' ).toggleClass("rotate");
+});
+
+
+
+$('.dev-btn').click(function() {
+$('nav ul  .dev-show' ).toggleClass("show3");
+$('nav ul.dev-fourth' ).toggleClass("rotate");
+});
+
+
+$('.pro-btn').click(function() {
+$('nav ul .pro-show' ).toggleClass("show4");
+$('nav ul.pro-fifth' ).toggleClass("rotate");
+});
+$('nav ul li').click(function() {
+    $(this).addClass("active").siblings().removeClass("active");
+});
+
+</script>
+
+
+
+
+  </body>
+</html>
+
+
+
+
